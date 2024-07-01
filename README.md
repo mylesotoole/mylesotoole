@@ -91,15 +91,12 @@ gsettings set org.gnome.desktop.notifications show-in-lock-screen false
 gsettings set org.gnome.desktop.input-sources xkb-options "['caps:none']"
 
 # Install Flatpaks
-flatpak -y install --user flathub org.gnome.Totem
-flatpak -y install --user flathub org.gnome.Loupe
-flatpak -y install --user flathub com.valvesoftware.Steam
-flatpak -y install --user flathub org.gnome.Boxes
-flatpak -y install --user flathub io.github.shiftey.Desktop
-flatpak -y install --user flathub net.davidotek.pupgui2
-flatpak -y install --user flathub com.heroicgameslauncher.hgl
-flatpak -y install --user flathub com.discordapp.Discord
-flatpak -y install --user flathub com.spotify.Client
+flatpak -y install --user flathub org.gnome.Totem # Image Viewer
+flatpak -y install --user flathub org.gnome.Loupe # GNOME Videos
+flatpak -y install --user flathub com.valvesoftware.Steam # Steam
+flatpak -y install --user flathub net.davidotek.pupgui2 # ProtonUp-Qt
+flatpak -y install --user flathub com.discordapp.Discord # Discord
+flatpak -y install --user flathub com.spotify.Client # Spotify
 
 # Configure Flatpak permissions
 flatpak override --user --filesystem=home org.mozilla.firefox
