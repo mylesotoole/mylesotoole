@@ -112,7 +112,7 @@ if grep -q "#WaylandEnable=false" /etc/gdm/custom.conf; then
 fi
 
 # Configure layered packages and drivers
-sudo rpm-ostree override remove yelp gnome-tour malcontent --install akmod-nvidia
+sudo rpm-ostree override remove yelp gnome-tour --install akmod-nvidia
 sudo rpm-ostree kargs --append=rd.driver.blacklist=nouveau --append=modprobe.blacklist=nouveau --append=nvidia-drm.modeset=1 --append=initcall_blacklist=simpledrm_platform_driver_init
 
 # Reboot
