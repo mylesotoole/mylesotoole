@@ -53,6 +53,7 @@ for extension in "${extensions[@]}"; do
     fi
 done
 gsettings set org.gnome.shell enabled-extensions "['appindicatorsupport@rgcjonas.gmail.com']"
+gsettings --schemadir ~/.local/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/schemas set org.gnome.shell.extensions.appindicator legacy-tray-enabled false
 
 # Window Management Settings
 gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,maximize,close'
