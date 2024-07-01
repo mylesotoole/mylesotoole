@@ -11,7 +11,6 @@ flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/fl
 # Install NoiseTorch
 wget https://raw.githubusercontent.com/mylesotoole/Install-NoiseTorch/main/Install-NoiseTorch && chmod +x Install-NoiseTorch && ./Install-NoiseTorch
 
-
 # Configure Steam to start minimized at login
 mkdir -p ~/.config/autostart
 tee ~/.config/autostart/steam.desktop >/dev/null <<EOF
