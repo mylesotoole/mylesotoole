@@ -1,9 +1,6 @@
 <details><summary>My Fedora Config</summary>
   
 ```
-#!/bin/bash
-rm -- "$0"
-
 # Remove uneeded applications
 sudo flatpak uninstall -y --delete-data org.gnome.NautilusPreviewer org.gnome.Loupe org.gnome.TextEditor org.gnome.Evince org.gnome.Snapshot org.gnome.Connections org.gnome.font-viewer org.gnome.clocks org.gnome.Weather org.gnome.baobab org.gnome.Screenshot org.gnome.Maps org.fedoraproject.MediaWriter org.gnome.Calculator org.gnome.Calendar org.gnome.Characters org.gnome.Contacts org.gnome.Logs org.gnome.Extensions
 
