@@ -2,7 +2,7 @@
   
 ```
 # Remove uneeded applications
-sudo flatpak uninstall -y --delete-data org.gnome.NautilusPreviewer org.gnome.Loupe org.gnome.TextEditor org.gnome.Evince org.gnome.Snapshot org.gnome.Connections org.gnome.font-viewer org.gnome.clocks org.gnome.Weather org.gnome.baobab org.gnome.Screenshot org.gnome.Maps org.fedoraproject.MediaWriter org.gnome.Calculator org.gnome.Calendar org.gnome.Characters org.gnome.Contacts org.gnome.Logs org.gnome.Extensions
+sudo flatpak uninstall -y --delete-data org.gnome.NautilusPreviewer org.gnome.TextEditor org.gnome.Evince org.gnome.Snapshot org.gnome.Connections org.gnome.font-viewer org.gnome.clocks org.gnome.Weather org.gnome.baobab org.gnome.Screenshot org.gnome.Maps org.fedoraproject.MediaWriter org.gnome.Calculator org.gnome.Calendar org.gnome.Characters org.gnome.Contacts org.gnome.Logs org.gnome.Extensions
 
 # Configure flatpak repos
 sudo flatpak remote-delete flathub
@@ -90,7 +90,10 @@ gsettings set org.gnome.desktop.notifications show-in-lock-screen false
 # Miscellaneous Settings
 gsettings set org.gnome.desktop.input-sources xkb-options "['caps:none']"
 
-# Install Flatpaks
+# Install GNOME Videos
+flatpak -y install fedora org.gnome.Totem
+
+# Install user Flatpaks
 flatpak -y install --user flathub org.gnome.Totem # Image Viewer
 flatpak -y install --user flathub org.gnome.Loupe # GNOME Videos
 flatpak -y install --user flathub com.valvesoftware.Steam # Steam
