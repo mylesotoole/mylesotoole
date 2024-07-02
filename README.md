@@ -122,3 +122,14 @@ sudo rpm-ostree kargs --append=rd.driver.blacklist=nouveau --append=modprobe.bla
 reboot
 ```
 </details>
+
+<details><summary>Optimize Steam Flatpak</summary>
+  
+```
+# Optimize Steam
+echo "@nClientDownloadEnableHTTP2PlatformLinux 0
+@fDownloadRateImprovementToAddAnotherConnection 1.0
+unShaderBackgroundProcessingThreads 12" >>~/.var/app/com.valvesoftware.Steam/.steam/steam/steam_dev.cfg
+pkill steam
+```
+</details>
